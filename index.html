@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="pt-br"><head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/styles.css">
@@ -7,8 +9,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favico.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <title>Resgate Grátis</title>
-    <script async="" defer="" src="js/pixel.js"></script><script async="" defer="" src="js/pixel_1.js"></script>
-<script async="" defer="" src="js/pixel.js"></script></head>
+    <script async defer src="js/pixel.js"></script>
+    <script async defer src="js/pixel_1.js"></script>
+</head>
 <body>
     <nav class="navbar" style="padding-top: 15px; margin-bottom: 5px;">
         <div class="menu-icon" style="padding-left: 3%;">
@@ -20,30 +23,26 @@
         </div>
     </nav>
 
-
     <div id="tela-inicial" class="pergunta">
         <br>
         <div style="font-family: 'GellixBold'; font-weight: 600; color: #00a470; text-align: center; padding-left: 20px; padding-right: 20px; font-size: 20px; padding-bottom: 5px;"> 
             <p style=" margin-bottom: 4px;">BEM-VINDO À PROMOÇÃO DE SETEMBRO!</p>
         </div>
-        <img src="images/img1.webp" alt="Campanha Outubro Rosa" style="width: 90%; border-radius: 15px; margin: 0 auto; align-items: center; display: flex; justify-content: center;">
+        <img src="images/img1.gif" alt="Promoção Kit Melancia" style="width: 90%; border-radius: 15px; margin: 0 auto; align-items: center; display: flex; justify-content: center;">
         <div style="text-align: center; padding: 20px; font-size: 13px;">
-            <p style="font-family: 'GellixRegular'; margin-bottom: 4px;">Garanta o seu <b style="font-family: 'GellixMedium';">Kit Melancia O Boticário (7 itens)</b> com condições especiais neste mês de setembro.</p>
+            <p style="font-family: 'GellixRegular'; margin-bottom: 4px;">Aproveite a oportunidade de garantir seu <b style="font-family: 'GellixMedium';">Kit Melancia O Boticário (7 itens)</b> com condições especiais apenas neste mês de setembro!</p>
             <br>
-            <p style="font-family: 'GellixRegular'; margin-bottom: 4px;">Aproveite a oportunidade e descubra a fragrância exclusiva de melancia, feita especialmente para você.</p>
-            
+            <p style="font-family: 'GellixRegular'; margin-bottom: 4px;">Clique no botão abaixo para participar da promoção e garantir seu kit com um <b style="font-family: 'GellixMedium';">desconto imperdível de até 80%</b>!</p>
         </div>
       
-        <button class="next-button" onclick="iniciarDesafio()">COMEÇAR DESAFIO</button>
+        <button class="next-button" onclick="iniciarDesafio()">COMEÇAR PROMOÇÃO</button>
         <br>
     </div>
 
-
-    
     <div class="pergunta" id="perguntas" style="display: none;"> 
         <div style="padding-bottom: 20px;"></div>
         <div id="respondaeganhe" class="respondaeganhe">
-            <p style="font-family: 'GellixSemiBold';">Promoção de Setembro</p>
+            <p style="font-family: 'GellixSemiBold';">Promoção: Setembro Kit Melancia</p>
         </div>
         <div id="barradeprogresso" class="container" style="padding-bottom: 5px;">
             <p id="pergunta" style="font-family: 'GellixSemiBold'; margin-bottom: 4px;">Pergunta 1 de 5</p>
@@ -52,63 +51,71 @@
                 <div class="progress-bar">
                     <div class="progress" id="progress" style="width: 20%;"></div>
                 </div>
-               
             </div>
         </div>
 
+        <!-- Perguntas -->
         <div id="p1">
-    <p class="pergunta_title">Qual é o destaque do Kit Melancia deste mês?</p>
-    <ul class="quiz-options">
-        <li><button>Uma fragrância de melancia exclusiva</button></li>
-        <li><button>Um kit de beleza comum</button></li>
-        <li><button>Uma coleção de acessórios</button></li>
-    </ul>
-    <p class="descontoDiv">valendo 15% de desconto</p>
-</div>
+            <p class="pergunta_title">Qual é o destaque do Kit Melancia neste mês?</p>
+            <ul class="quiz-options">
+                <li><button>Uma fragrância exclusiva de melancia</button></li>
+                <li><button>Um kit de beleza comum</button></li>
+                <li><button>Uma coleção de acessórios</button></li>
+            </ul>
+            <p class="descontoDiv">valendo 15% de desconto</p>
+        </div>
 
-<div id="p2" style="display: none">
-    <p class="pergunta_title">Quantos itens compõem o Kit Melancia?</p>
-    <ul class="quiz-options">
-        <li><button>5 itens</button></li>
-        <li><button>7 itens</button></li>
-        <li><button>10 itens</button></li>
-    </ul>
-    <p class="descontoDiv">valendo 30% de desconto</p>
-</div>
+        <div id="p2" style="display: none">
+            <p class="pergunta_title">Quantos itens compõem o Kit Melancia?</p>
+            <ul class="quiz-options">
+                <li><button>5 itens</button></li>
+                <li><button>7 itens</button></li>
+                <li><button>10 itens</button></li>
+            </ul>
+            <p class="descontoDiv">valendo 30% de desconto</p>
+        </div>
 
-<div id="p3" style="display: none">
-    <p class="pergunta_title">Qual é a vantagem de garantir o kit neste mês?</p>
-    <ul class="quiz-options">
-        <li><button>Receber frete grátis</button></li>
-        <li><button>Condições especiais de lançamento</button></li>
-        <li><button>Ganhar brindes de outra marca</button></li>
-    </ul>
-    <p class="descontoDiv">valendo 60% de desconto</p>
-</div>
+        <div id="p3" style="display: none">
+            <p class="pergunta_title">Qual é a vantagem de garantir o kit neste mês?</p>
+            <ul class="quiz-options">
+                <li><button>Receber frete grátis</button></li>
+                <li><button>Condições especiais de lançamento</button></li>
+                <li><button>Ganhar brindes de outra marca</button></li>
+            </ul>
+            <p class="descontoDiv">valendo 60% de desconto</p>
+        </div>
 
-<div id="p4" style="display: none">
-    <p class="pergunta_title">O Kit Melancia é feito especialmente para:</p>
-    <ul class="quiz-options">
-        <li><button>Pessoas que gostam de fragrâncias exclusivas</button></li>
-        <li><button>Qualquer pessoa sem restrição</button></li>
-        <li><button>Apenas profissionais de beleza</button></li>
-    </ul>
-    <p class="descontoDiv">valendo 70% de desconto</p>
-</div>
+        <div id="p4" style="display: none">
+            <p class="pergunta_title">O Kit Melancia é feito especialmente para:</p>
+            <ul class="quiz-options">
+                <li><button>Pessoas que gostam de fragrâncias exclusivas</button></li>
+                <li><button>Qualquer pessoa</button></li>
+                <li><button>Apenas profissionais de beleza</button></li>
+            </ul>
+            <p class="descontoDiv">valendo 70% de desconto</p>
+        </div>
 
-<div id="p5" style="display: none">
-    <p class="pergunta_title">Qual é o período de validade da promoção do Kit Melancia?</p>
-    <ul class="quiz-options">
-        <li><button>Todo o ano</button></li>
-        <li><button>Apenas neste mês de setembro</button></li>
-        <li><button>Somente na próxima semana</button></li>
-    </ul>
-    <p class="descontoDiv">valendo 80% de desconto</p>
-</div>
+        <div id="p5" style="display: none">
+            <p class="pergunta_title">Qual é o período da promoção do Kit Melancia?</p>
+            <ul class="quiz-options">
+                <li><button>Todo o ano</button></li>
+                <li><button>Apenas neste mês de setembro</button></li>
+                <li><button>Somente na próxima semana</button></li>
+            </ul>
+            <p class="descontoDiv">valendo 80% de desconto</p>
+        </div>
 
+        <!-- Popup de erro -->
+        <div id="popup-erro" style="display: none;">
+            <div class="popup-content">
+                <h2 style="color: red;">Você errou!</h2>
+                <br>
+                <p>Ops! Não foi dessa vez. <strong>Tente novamente</strong> para conquistar seu desconto!</p>
+                <button onclick="fecharPopup()">Tentar novamente</button>
+            </div>
+        </div>
 
         <style>
-
 .descontoDiv {
     text-align: right; 
     margin-top: 0px; 
@@ -139,25 +146,23 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 999;
-    width: 100%;
-    height: 100%;
 }
 
 .popup-content {
-    background-color: rgb(255, 255, 255); /* Fundo preto com transparência */
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    color: #000000; /* Texto branco */
+    color: #000000;
     width: 80%;
-    margin: auto; /* Centraliza no centro da tela */
+    margin: auto;
     max-width: 400px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombras para destaque */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -178,100 +183,87 @@
     font-weight: bold;
 }
 
-
 .popup-content button:hover {
     background-color: #cccccc;
 }
-
-
-
         </style>
-
-
-
     </div>
 
-         <!-- Tela Final -->
-<div class="pergunta" id="tela-final" style="display: none;">
-    <div style="font-family: 'GellixBold'; font-weight: 600; color: #000000; text-align: center; font-size: 20px; padding: 20px;"> 
-        <p>Parabéns!!!</p>
-        <p id="mensagemFinalDesconto" style="color: #16A34A; font-size: 18px;">Você desbloqueou 80% de desconto!</p>
+    <!-- Tela Final -->
+    <div class="pergunta" id="tela-final" style="display: none;">
+        <div style="font-family: 'GellixBold'; font-weight: 600; color: #000000; text-align: center; font-size: 20px; padding: 20px;"> 
+            <p>Parabéns!!!</p>
+            <p id="mensagemFinalDesconto" style="color: #16A34A; font-size: 18px;">Você desbloqueou 80% de desconto!</p>
+        </div>
+        <img src="images/resgate-kit.webp" alt="Imagem final" style="width: 90%; border-radius: 15px; margin: 0 auto; align-items: center; display: flex; justify-content: center;">
+        <div style="text-align: center; padding: 20px; font-size: 16px;">
+            <p style="font-family: 'GellixRegular'; margin-bottom: 4px;">
+                Você concluiu a promoção de setembro e garantiu 
+                <b>80% de desconto no Kit Melancia O Boticário (7 itens)</b>! Aproveite essa oportunidade exclusiva e desfrute da fragrância irresistível de melancia.
+            </p>
+        </div>
+        <button class="next-button" onclick="resgatarDesconto()">
+            <img src="images/gift.svg" alt="Ícone de presente" style="color: #ffffff; width: 20px; vertical-align: middle;"> Resgatar desconto
+        </button>
+        <br>
     </div>
-    <img src="images/resgate-kit.webp" alt="Imagem final" style="width: 90%; border-radius: 15px; margin: 0 auto; align-items: center; display: flex; justify-content: center;">
-    <div style="text-align: center; padding: 20px; font-size: 16px;">
-        <p style="font-family: 'GellixRegular'; margin-bottom: 4px;">
-            Você concluiu a promoção de setembro e garantiu 
-            <b>80% de desconto no Kit Melancia O Boticário (7 itens)</b>! Aproveite essa oportunidade exclusiva e desfrute da fragrância irresistível de melancia.
-        </p>
-    </div>
-    <button class="next-button" onclick="resgatarDesconto()">
-        <img src="images/gift.svg" alt="Ícone de presente" style="color: #ffffff; width: 20px; vertical-align: middle;"> Resgatar desconto
-    </button>
-    <br>
-</div>
-
 
     <script>
         let currentQuestion = 1;
         const totalQuestions = 5;
-    
+
         const respostasCorretas = {
-            1: "Uma fragrância de melancia exclusiva",
+            1: "Uma fragrância exclusiva de melancia",
             2: "7 itens",
             3: "Condições especiais de lançamento",
             4: "Pessoas que gostam de fragrâncias exclusivas",
             5: "Apenas neste mês de setembro"
         };
-    
-        // Valores de desconto para cada pergunta, começando do p2
+
         const descontos = {
             2: "15% de desconto",
             3: "30% de desconto",
             4: "60% de desconto",
             5: "80% de desconto"
         };
-    
+
         document.querySelectorAll('.quiz-options button').forEach(button => {
             button.addEventListener('click', (event) => {
                 const isCorrect = verificarResposta(event.target);
                 if (!isCorrect) {
                     abrirPopup();
                 } else {
-                    setTimeout(proximaPergunta, 300); // Delay de 500 milissegundos
+                    setTimeout(proximaPergunta, 300);
                 }
             });
         });
-    
+
         function verificarResposta(botaoSelecionado) {
             const respostaCorreta = respostasCorretas[currentQuestion];
             const isCorrect = botaoSelecionado.textContent.trim() === respostaCorreta;
             
             if (!isCorrect) {
-                botaoSelecionado.classList.add('incorrect'); // Adiciona a classe 'incorrect'
+                botaoSelecionado.classList.add('incorrect');
                 setTimeout(() => {
-                    botaoSelecionado.classList.remove('incorrect'); // Remove a classe 'incorrect' após um tempo
-                }, 200); // Tempo em milissegundos
+                    botaoSelecionado.classList.remove('incorrect');
+                }, 200);
             }
-            
             return isCorrect;
         }
-    
 
         function iniciarDesafio() {
             document.getElementById('tela-inicial').style.display = 'none';
             document.getElementById('perguntas').style.display = 'block';
-            // Mostre outros elementos conforme necessário
         }
-
 
         function abrirPopup() {
             document.getElementById('popup-erro').style.display = 'block';
         }
-    
+
         function fecharPopup() {
             document.getElementById('popup-erro').style.display = 'none';
         }
-    
+
         function proximaPergunta() {
             if (currentQuestion < totalQuestions) {
                 document.getElementById(`p${currentQuestion}`).style.display = 'none';
@@ -283,7 +275,7 @@
                 mostrarTelaFinal();
             }
         }
-    
+
         function atualizarDesconto() {
             const mensagemDesconto = document.getElementById('mensagemDesconto');
             const descontoElemento = document.getElementById('desconto');
@@ -295,13 +287,13 @@
                 mensagemDesconto.style.display = 'none';
             }
         }
-    
+
         function updateProgress() {
             const progressPercentage = (currentQuestion / totalQuestions) * 100;
             document.getElementById('progress').style.width = `${progressPercentage}%`;
             document.getElementById('pergunta').textContent = `Pergunta ${currentQuestion} de ${totalQuestions}`;
         }
-    
+
         document.addEventListener("DOMContentLoaded", function() {
             updateProgress();
             atualizarDesconto();
@@ -316,5 +308,5 @@
             window.location.href = '../loja' + window.location.search;
         }
     </script>
-
-</body></html>
+</body>
+</html>
